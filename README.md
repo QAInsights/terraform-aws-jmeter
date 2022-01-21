@@ -18,10 +18,10 @@ This repo will help you to spin up an AWS EC2 instance with Java, JMeter, and JM
 
 ### Terraform Configuration
 
-To configure JMeter variables, refer `variables.tf`
-To configure JMeter URLs, refer `main.tf`
-To configure JMeter Plugins, refer `variables.tf` > `jmeter_plugins` variable
-To configure AWS Key pair name, refer `variables.tf` > `aws_key_name` variable
+To configure JMeter variables, refer `variables.tf`  
+To configure JMeter URLs, refer `main.tf`  
+To configure JMeter Plugins, refer `variables.tf` > `jmeter_plugins` variable  
+To configure AWS Key pair name, refer `variables.tf` > `aws_key_name` variable  
 
 By default, it will spin up an `t2.micro` instance with `us-east-2` availability zone.
 
