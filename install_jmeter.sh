@@ -37,4 +37,5 @@ if [ $STATUS -eq 0 ];then
    echo "JMeter and its plugins installed successfully!"
    echo "PATH=${JMETER_HOME}/apache-jmeter-${JMETER_VERSION}/bin:$PATH" >> ${JMETER_HOME}/.bashrc
    source ${JMETER_HOME}/.bashrc
+   echo "${JMETER_HOME}/apache-jmeter-${JMETER_VERSION}/bin" + " is added to PATH"
 fi

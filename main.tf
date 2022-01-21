@@ -3,7 +3,7 @@ provider "aws" {
   region  = var.aws_region
 }
 
-resource "aws_instance" "jmeter_server" {
+resource "aws_instance" "this" {
   ami           = var.aws_ami
   instance_type = var.aws_instance_type
   key_name      = var.aws_key_name
