@@ -10,7 +10,7 @@ resource "aws_instance" "this" {
   tags = {
     Name = "JMeter Server"
   }
-  user_data = templatefile("./modules/jmeter-and-plugins/install_jmeter.sh", {
+  user_data = templatefile("${path.module}/install_jmeter.sh", {
     JMETER_HOME                         = var.jmeter_home,
     JMETER_VERSION                      = var.jmeter_version,
     JMETER_DOWNLOAD_URL                 = "https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-${var.jmeter_version}.tgz",
