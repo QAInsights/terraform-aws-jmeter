@@ -16,34 +16,36 @@ This repo will help you to spin up an AWS EC2 instance with Java, JMeter, and JM
 * Create a new key pair w/ RSA and Private Key format (PEM) 
 * Save the private key to a file in a secure location
 
-### Terraform Configuration
+### Usage
 
-To configure JMeter variables, refer `variables.tf`  
-To configure JMeter URLs, refer `main.tf`  
-To configure JMeter Plugins, refer `variables.tf` > `jmeter_plugins` variable  
-To configure AWS Key pair name, refer `variables.tf` > `aws_key_name` variable  
+```
+module "jmeter" {
+  source  = "QAInsights/jmeter/aws"
+  version = "1.1.0"
 
-By default, it will spin up an `t2.micro` instance with `us-east-2` availability zone.
+  # insert the 3 required variables here
+
+  aws_ami = "ami-001089eb624938d9f"
+  aws_instance_type = "t2.micro"
+  aws_key_name = "terraform"
+}
+```
+
+By default, it will spin up an `t2.micro` instance with `us-east-2` availability zone. Refer to the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-types.html) for more information.
+
+To configure other input variables, refer to the [documentation](https://registry.terraform.io/modules/QAInsights/jmeter/aws/latest?tab=inputs#optional-inputs).
+
+To configure [outputs](outputs.tf), refer to the [documentation](https://registry.terraform.io/modules/QAInsights/jmeter/aws/latest?tab=outputs).
 
 ## Terraform Plan and Apply
 
-* Clone this repo
-* cd into the directory
 * Run `terraform init`
 * Run `terraform plan`
 * Run `terraform apply` when prompted to continue, enter `yes` to spin up the instance
 
-## Outputs
+## Terraform Graph
 
-When you plan and apply, you will see the following outputs:
-
-```
-  + arn            = (known after apply)
-  + instance_state = (known after apply)
-  + jmeter_version = "5.4.3"
-  + private_ip     = (known after apply)
-  + public_ip      = (known after apply)
-```
+![Graph](./graph/graph.svg)
 
 ## JMeter validation
 
