@@ -1,15 +1,14 @@
 variable "aws_profile" {
   default = "default"
-
 }
 variable "aws_region" {
   default = "us-east-2"
 }
 variable "aws_ami" {
-  default = "ami-001089eb624938d9f"
+  
 }
 variable "aws_instance_type" {
-  default = "t2.micro"
+  
 }
 variable "aws_key_name" {
   default = "terraform"
