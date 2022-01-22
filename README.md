@@ -45,7 +45,7 @@ To configure [outputs](outputs.tf), refer to the [documentation](https://registr
 
 ## Terraform Graph
 
-![Graph](./graph/graph.svg)
+![Graph](https://raw.githubusercontent.com/QAInsights/terraform-aws-jmeter/main/graph/graph.svg)
 
 ## JMeter validation
 
