@@ -16,7 +16,7 @@ This repo will help you to spin up an AWS EC2 instance with Java, JMeter, and JM
 * Create a new key pair w/ RSA and Private Key format (PEM) 
 * Save the private key to a file in a secure location
 
-### Usage
+## Usage
 
 ```
 module "jmeter" {
@@ -50,3 +50,9 @@ To configure [outputs](outputs.tf), refer to the [documentation](https://registr
 ## JMeter validation
 
 ssh into the instance using the PEM and run `jmeter -v` to verify JMeter is installed and working.
+
+## Reference
+
+* https://www.terraform.io/
+* http://aws.amazon.com/
+* http://jmeter.apache.org/
