@@ -18,6 +18,6 @@ output "arn" {
 }
 
 output "jmeter_version" {
-  description = "JMeter version"
+  description = "JMeter version installed on the instance"
   value       = module.jmeter_server.jmeter_version
 }
