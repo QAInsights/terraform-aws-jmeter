@@ -1,4 +1,5 @@
 variable "aws_profile" {
+  description = "value for aws_profile"
   default = "default"
 }
 variable "aws_region" {
@@ -6,9 +7,7 @@ variable "aws_region" {
 }
 variable "aws_ami" {}
 variable "aws_instance_type" {}
-variable "aws_key_name" {
-  default = "terraform"
-}
+variable "aws_key_name" {}
 
 variable "jmeter_home" {
   default = "/home/ec2-user"
