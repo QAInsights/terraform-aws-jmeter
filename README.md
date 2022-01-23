@@ -1,6 +1,6 @@
 # JMeter Terraform
 
-This repo will help you to spin up an AWS EC2 instances with Java, JMeter, and JMeter Plugins installed.
+This repo will help you to spin up an AWS EC2 instance with Java, JMeter, and JMeter Plugins installed.
 
 ## Prerequisites
 
