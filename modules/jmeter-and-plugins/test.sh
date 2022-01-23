@@ -1,7 +1,17 @@
 #!/bin/sh
-touch test.txt
-JMETER_HOME="/opt/apache-jmeter-5.3"
-echo $JMETER_HOME >> test.txt
+n=10
+if [ $n > 1 ] && [ $n < 1 ]; then
+    echo "$n is greater than 1 and less than 10"
+fi
+# JMETER_LEADER="true"
+
+# if [ "${JMETER_LEADER}" = "true" ]; then
+#     echo "Installing Java"
+#     echo "remote_hosts=${JMETER_LEADER}" >> tes.txt
+# fi
+# touch test.txt
+# JMETER_HOME="/opt/apache-jmeter-5.3"
+# echo $JMETER_HOME >> test.txt
 # TESTSTR="abc,def,ghij"
 
 # for i in $(echo $TESTSTR | tr ',' '\n')
