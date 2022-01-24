@@ -6,4 +6,5 @@ module "jmeter_server" {
   aws_instance_type = "t2.small"
   aws_key_name      = "terraform"
   jmeter_version    = "5.4.3"
+  jmeter_plugins    = var.jmeter_plugins
 }

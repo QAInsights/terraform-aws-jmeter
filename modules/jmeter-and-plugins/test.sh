@@ -1,8 +1,8 @@
 #!/bin/sh
-n=10
-if [ $n > 1 ] && [ $n < 1 ]; then
-    echo "$n is greater than 1 and less than 10"
-fi
+# n=10
+# if [ $n > 1 ] && [ $n < 1 ]; then
+#     echo "$n is greater than 1 and less than 10"
+# fi
 # JMETER_LEADER="true"
 
 # if [ "${JMETER_LEADER}" = "true" ]; then
