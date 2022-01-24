@@ -21,3 +21,7 @@ output "jmeter_version" {
   description = "JMeter version installed on the instance"
   value       = module.jmeter_server.jmeter_version
 }
+output "jmeter_plugins" {
+  description = "JMeter plugins installed"
+  value       = module.jmeter_server.jmeter_plugins
+}

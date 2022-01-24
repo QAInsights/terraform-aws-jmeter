@@ -24,6 +24,6 @@ variable "jmeter_version" {
 variable "jmeter_plugins" {
   type        = list(string)
   description = "List of JMeter plugins to install"
-  default     = ["jpgc-casutg", "jmeter-jdbc"]
+  default     = null
 }
  
