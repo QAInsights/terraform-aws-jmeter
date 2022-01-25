@@ -54,5 +54,5 @@ ssh into the instance using the PEM and run `jmeter -v` to verify JMeter is inst
 ## Reference
 
 * https://www.terraform.io/
-* http://aws.amazon.com/
-* http://jmeter.apache.org/
+* https://aws.amazon.com/
+* https://jmeter.apache.org/
