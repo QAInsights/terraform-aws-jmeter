@@ -24,4 +24,10 @@ output "jmeter_version" {
 output "jmeter_plugins" {
   description = "JMeter plugins installed"
   value       = var.jmeter_plugins
+} 
+
+output "availability_zone" {
+  description = "The availability zone the instance is in"
+  value       = var.availability_zone
 }
+

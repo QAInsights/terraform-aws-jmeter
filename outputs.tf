@@ -25,3 +25,14 @@ output "jmeter_plugins" {
   description = "JMeter plugins installed"
   value       = module.jmeter_server.jmeter_plugins
 }
+
+
+output "availability_zone" {
+  description = "The availability zone the instance is in"
+  value       = module.jmeter_server.availability_zone
+
+}
+output "aws_region" {
+  description = "AWS region"
+  value       = data.aws_region.current.name
+}
