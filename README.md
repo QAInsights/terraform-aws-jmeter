@@ -44,10 +44,6 @@ To configure [outputs](outputs.tf), refer to the [documentation](https://registr
 * Run `terraform plan`
 * Run `terraform apply` when prompted to continue, enter `yes` to spin up the instance
 
-## Terraform Graph
-
-![Graph](https://raw.githubusercontent.com/QAInsights/terraform-aws-jmeter/main/graph/graph.svg)
-
 ## JMeter validation
 
 ssh into the instance using the PEM and run `jmeter -v` to verify JMeter is installed and working.
