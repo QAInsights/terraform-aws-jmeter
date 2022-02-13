@@ -21,7 +21,7 @@ This repo will help you to spin up an AWS EC2 instance with Java, JMeter, and JM
 ```
 module "jmeter" {
   source  = "QAInsights/jmeter/aws"
-  version = "1.1.4"
+  version = "1.1.6"
   # insert the 6 required variables here
   aws_ami           = "ami-001089eb624938d9f"
   aws_instance_type = "t2.small"
